@@ -1,0 +1,9 @@
+<p>content-injection works!</p>
+<ng-container *ngTemplateOutlet="TEST1; context: parsedData"></ng-container>
+
+
+
+<ng-template #TEST1>
+  <div class="test1" [innerHTML]="parsedData">Hello World</div>
+  <!-- {{parsedData}} -->
+</ng-template>
